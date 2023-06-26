@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="se você quer um conselho e não sabe onde procurar aqui temos muitos conselhos que você precisar de motivacional a emocionante">
+  <meta name="robots" content="index">
+  <!--projeto proposto por front end mentor para evolução-->
+  <meta name="author" content="herbert">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Gerador de Conselhos app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="container_advice">
+      <div class="card_advice">
+        <!--span usado para mostrar o número de concelhos-->
+        <h1>advice <span id="conselho_id">#117</span></h1>
+        <div id="conselho" class="box_conselho">
+          <!--tag que será usada para mostra os concelhos-->
+          <h2 id="conselho_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro labore aliquam libero, architecto laboriosam possimus aperiam dese</h2>
+        </div>
+        <!--picture é um modelo de responsivo onde pode se trocar uma imagem com um tamanho da tela pre definido ex: quando a tela chegar em 500px a imagem que está na tag souce atributo srcset será trocada com a imagem da tag img e a imagem da souce será usada agora e a da tag img será recusada-->
+        <picture>
+          <source media="(max-width: 500px)" srcset="images/pattern-divider-mobile.svg">
+          <img src="images/pattern-divider-desktop.svg" alt="">
+        </picture>
+        <!--botão que chamará a function de conselhos-->
+        <button id="btn_advance"><img src="images/icon-dice.svg" alt=""></button>
+      </div>
+      <div class="author">
+        <p>&copy; - Desenvolvido por <a href="https://www.linkedin.com/in/herbert-souza-220268268/" target="_blank">Herbert Souza</a></p>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

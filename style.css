@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root{
+    /*cor do background*/
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+    /*cor da color*/
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+.card_advice, .container_advice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container_advice{
+    min-height: 100vh;
+    background: var(--Dark-Blue);
+    width: 100%;
+}
+.card_advice{
+    background: var(--Dark-Grayish-Blue);
+    color: var(--Light-Cyan);
+    padding: 0px 0 60px 0;
+    position: relative;
+    border-radius: 10px;
+    width: 500px;
+}
+#btn_advance{
+    position: absolute;
+    bottom: -39px;
+    padding: 20px;
+    background: var(--Neon-Green);
+    border-radius: 50%;
+    border: none;
+}
+#btn_advance:active{
+    background: hsl(180, 100%, 86%);
+}
+/*colocando efeitos em toda parte escrita*/
+#btn_advance:hover{
+    filter: drop-shadow(0 0 0.75rem hsl(150, 100%, 66%));
+    transition: all 0.2s ease-out;
+}
+.box_conselho{
+    padding: 20px 40px;
+    text-align: center;
+}
+.card_advice h1{
+    font-size: 14px;
+    color: var(--Neon-Green);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 30px;
+}
+
+/*essa class é utilizada para jogar a div bottom a 10px do final*/
+.author{
+    position: absolute;
+    bottom: 10px;
+    font: 900 12px Arial;
+}
+.author a{
+    text-decoration: none;
+    color: black;
+}
+.author a:hover{
+    color: rebeccapurple;
+}
+@media(max-width: 500px){
+    .card_advice{
+        width: 90%;
+    }
+    /*usando o margin auto para centralizar a imagem do srcer no centro*/
+    .card_advice img{
+        width: 80%;
+        display: flex;
+        margin: auto;
+    }
+}
